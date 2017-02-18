@@ -1,0 +1,46 @@
+The Nextcloud Client is a file synchronization desktop utility. It synchronizes
+files on your local computer, tablet, or hand-held device with an Nextcloud
+Server. If you make a change to the files on one device, the change is
+propagated to all other synchronized devices using the desktop synchronization
+clients.
+
+Normally, you start the client by clicking on the desktop icon or by starting
+it from the client application menu. After starting, a Nextcloud icon appears
+in the computer system tray or on your tablet or handheld device.
+
+Nextcloud is an actively maintained fork of ownCloud.
+
+To download the latest source follow these instructions:
+
+$ git clone https://github.com/nextcloud/client_theming.git
+$ cd client_theming
+$ git submodule update --init --recursive
+
+Go for a coffee
+
+$ cd ..
+$ tar cvf client_theming-2.2.4.tar client_theming
+$ gzip -v9f client_theming-2.2.4.tar
+$ rm -rf client_theming
+
+or get it from the link in the info file
+
+This package optionally requires the Sphinx package in order to create
+_owncloud_  man pages.
+
+This slackbuild requires qtkeychain
+
+Both Sphinx and qtkeychain are available from slackbuilds.org
+
+The owncloud-client slackbuild on https://slackbuilds.org includes this note,
+but I did not have time to test building on Qt5:
+
+Note:  You must build this package against the same version of Qt that
+       qtkeychain was built against.  This package will automatically build
+       against qt4.  If you wish to build this package against qt5 then you
+       must set the flag BUILD_WITH_QT4 to 'No' when building this package.
+       For example:
+
+       # BUILD_WITH_QT4=No ./nextcloud-client.SlackBuild
+
+Homepage: https://nextcloud.com/
