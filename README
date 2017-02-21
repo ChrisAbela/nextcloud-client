@@ -32,15 +32,6 @@ This slackbuild requires qtkeychain
 
 Both Sphinx and qtkeychain are available from slackbuilds.org
 
-The owncloud-client slackbuild on https://slackbuilds.org includes this note,
-but I did not have time to test building on Qt5:
-
-Note:  You must build this package against the same version of Qt that
-       qtkeychain was built against.  This package will automatically build
-       against qt4.  If you wish to build this package against qt5 then you
-       must set the flag BUILD_WITH_QT4 to 'No' when building this package.
-       For example:
-
-       # BUILD_WITH_QT4=No ./nextcloud-client.SlackBuild
+This slackbuild will not build against qt5.
 
 Homepage: https://nextcloud.com/
