@@ -10,21 +10,6 @@ in the computer system tray or on your tablet or handheld device.
 
 Nextcloud is an actively maintained fork of ownCloud.
 
-To download the latest source follow these instructions:
-
-$ git clone https://github.com/nextcloud/client_theming.git
-$ cd client_theming
-$ git submodule update --init --recursive
-
-Go for a coffee
-
-$ cd ..
-$ tar cvf client_theming-2.2.4.tar client_theming
-$ gzip -v9f client_theming-2.2.4.tar
-$ rm -rf client_theming
-
-or get it from the link in the info file
-
 This package optionally requires the Sphinx package in order to create
 _owncloud_  man pages.
 
