@@ -1,8 +1,10 @@
 PRGNAM="nextcloud-client"
 VERSION="2.2.4"
-HOMEPAGE="httpis://nextcloud.com/"
-DOWNLOAD="TBD"
-MD5SUM=""
+HOMEPAGE="https://nextcloud.com/"
+DOWNLOAD="https://github.com/nextcloud/client_theming/archive/v2.2.4.tar.gz \
+         https://github.com/owncloud/client/archive/v2.3.0.tar.gz"
+MD5SUM="6d612c661f90e5ce1e0791520ecd6df3 \
+       4ab8e97d63296d43299c6da376b077f2"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="qtkeychain"
