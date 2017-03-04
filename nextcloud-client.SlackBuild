@@ -65,7 +65,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $SRCNAM
-ttar xvf $CWD/v$VERSION.tar.gz
+tar xvf $CWD/v$VERSION.tar.gz
 mv $SRCNAM-$VERSION $SRCNAM
 cd $SRCNAM
 tar xvf $CWD/v2.3.0.tar.gz
