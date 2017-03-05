@@ -65,8 +65,13 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $SRCNAM
-tar xvf $CWD/$SRCNAM-$VERSION.tar.gz
+tar xvf $CWD/v$VERSION.tar.gz
+mv $SRCNAM-$VERSION $SRCNAM
 cd $SRCNAM
+tar xvf $CWD/v2.3.0.tar.gz
+rmdir client
+mv client-2.3.0 client
+
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
