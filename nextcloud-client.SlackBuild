@@ -89,10 +89,9 @@ cd build
     -DCMAKE_INSTALL_MANDIR=/usr/man \
     -DCMAKE_INSTALL_SYSCONFDIR=/etc/$PRGNAM \
     -DCMAKE_BUILD_TYPE="Release" \
-    -D OEM_THEME_DIR=`pwd`/../nextcloudtheme \
+    -D OEM_THEME_DIR=$(realpath ../nextcloudtheme) \
     ../client
   make VERBOSE=1
-  make doc
   make install DESTDIR=$PKG
 cd ..
 

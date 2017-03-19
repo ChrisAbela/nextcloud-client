@@ -10,12 +10,7 @@ in the computer system tray or on your tablet or handheld device.
 
 Nextcloud is an actively maintained fork of ownCloud.
 
-This package optionally requires the Sphinx package in order to create
-_owncloud_  man pages.
-
-This slackbuild requires qtkeychain
-
-Both Sphinx and qtkeychain are available from slackbuilds.org
+This slackbuild requires qtkeychain, available from https://slackbuilds.org/
 
 This slackbuild will not build against qt5.
 
