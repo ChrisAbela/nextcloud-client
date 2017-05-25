@@ -26,9 +26,10 @@
 # This is based on the owncloud-client slackbuild in https://slackbuilds.org
 
 PRGNAM=nextcloud-client
-VERSION=${VERSION:-2.2.4}
+VERSION=${VERSION:-2.3.1}
+OWNCLOUD_VERSION=2.3.1
 BUILD=${BUILD:-1}
-TAG=${TAG:-_cea}
+TAG=${TAG:-_SBo}
 
 SRCNAM=client_theming
 
@@ -65,12 +66,12 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $SRCNAM
-tar xvf $CWD/v$VERSION.tar.gz
+tar xvf $CWD/client_theming-$VERSION.tar.gz
 mv $SRCNAM-$VERSION $SRCNAM
 cd $SRCNAM
-tar xvf $CWD/v2.3.0.tar.gz
+tar xvf $CWD/client-$OWNCLOUD_VERSION.tar.gz
 rmdir client
-mv client-2.3.0 client
+mv client-$OWNCLOUD_VERSION client
 
 chown -R root:root .
 find -L . \
